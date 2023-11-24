@@ -1,0 +1,155 @@
+:root{
+  --primary-color: #01143f;
+  --secondary-color: #5059BE;
+  --bar-color: #1F2937;
+  --text-color: hsl(0, 0%, 100%);
+  --headings-font: "Burbank Big Condensed Bold";
+  --body-font: "Burbank Big Condensed Bold";
+}
+body{
+  text-align: center;
+  background-color: var(--primary-color);
+  font-style: var(--body-font);
+}
+h1{
+  font-family: var(--headings-font);
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+h2{
+  font-family: var(--headings-font);
+  font-weight: 300;
+  color: var(--secondary-color)
+}
+
+strong{
+  color:var(--primary-color)
+}
+
+button.navbar-toggler{
+  background-color: var(--secondary-color)!important;
+}
+
+.nav-link{
+  color: var(--secondary-color);
+}
+
+.intro{
+  font-family: var(--headings-font);
+  font-size: 40px;
+}
+
+.text {
+ font-family: "Burbank Big Condensed Bold";
+ font-size: 60px;
+ color: var(--secondary-color);
+ text-shadow: 0 1px 0 var(--primary-color),
+ 0 2px 0 var(--primary-color),
+ 0 3px 0 var(--primary-color),
+ 0 4px 0 var(--primary-color),
+ 0 5px 0 var(--bar-color),
+ 0 6px 1px rgba(0,0,0,.1),
+ 0 0 5px rgba(0,0,0,.1),
+ 0 1px 3px rgba(0,0,0,.3),
+ 0 3px 5px rgba(0,0,0,.2),
+ 0 5px 10px rgba(0,0,0,.25),
+ 0 10px 10px rgba(0,0,0,.2),
+ 0 20px 20px rgba(0,0,0,.15);
+  text-align:center;
+}
+
+.button{
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  background: transparent;
+  padding: 12px;
+  border-radius: 40px;
+  font-size: 20px;
+  font-family: var(--body-font);
+  overflow: hidden;
+  transition: all 200ms ease-in-out; 
+  will-change: transform;
+  z-index: 0;
+  text-decoration: none;
+}
+:hover::after{
+  transform: translate(0, 0);
+} 
+.button:hover{
+  border: 2px solid transparent;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  transform: scale(1.05);
+  will-change: transform;
+}
+
+
+.header{
+  margin-bottom: 140px;
+}
+/* header */
+ 
+/* typing effect */
+.typing-effect {
+  width: 35ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+/* Recover challenges section */
+section{
+  margin-top: 100px;
+  padding: 20px;
+  background-color: #1F2937;
+}
+.challenges-card{
+  margin: 30px 80px;
+  height: max-content;
+  background: var(--secondary-color);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 18px );
+  -webkit-backdrop-filter: blur( 18px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border-radius: 20px;
+  padding: 25px 10px;
+  z-index: 10;
+  color: var(--text-color);
+}
+.card-title{
+  font-family: var(--headings-font);
+  font-size: 30px;
+  font-weight:500;
+  color:var(--secondary-color);
+}
+ul{
+  list-style: none;
+  color: var(--bar-color);
+}
+li{
+  font-size: 14px;
+  font-family: var(--body-font);
+  margin-bottom: 5px;
+}
+input{
+  color: var(--bar-color)!important;
+  border: 2px solid var(--bar-color)!important;
+  border-radius: 10px;
+  background: transparent!important;
+}
+
+/* textarea */
